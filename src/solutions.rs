@@ -4,6 +4,7 @@ use std::fs::File;
 
 pub mod aoc_day1_solver;
 pub mod aoc_day2_solver;
+pub mod aoc_day3_solver;
 pub mod aoc_no_solver;
 
 pub fn load_data(filename:String, day:usize, part:usize, data:&mut Vec<String>) -> io::Result<()> {

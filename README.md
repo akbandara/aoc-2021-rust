@@ -5,3 +5,4 @@ Run code by specifying the AOC day and part to be solved, together with the inpu
 
  * **Day 1:** "Sonar Sweep" - iteration, simple comparison and exhaustive search (aoc_day1_solver.rs)
  * **Day 2:** "Dive!" - iteration and simple arithmetic (aoc_day2_solver.rs)
+ * **Day 3:** "Binary diagnostic" - iteration, frequency computation, binary conversion (aoc_day3_solver.rs)
