@@ -25,18 +25,13 @@ pub fn solve(filename: String, day : usize, part : usize) -> io::Result<()>  {
     }
 
     if part == 2 {
-        let mut average_readings: Vec<i64> = [].to_vec();
-        for index in 0..(readings.len()-2) {
-            average_readings.push(readings[index]+readings[index+1]+readings[index+2]);
-        }
-
-        let mut current_reading:i64 = average_readings[0];
+        let mut current_reading:i64 = readings[0]+readings[1]+readings[2];
         let mut num_increases:i64 = 0;
-        for avg_reading in &average_readings {
-            if avg_reading > &current_reading {
+        for index in 0..(readings.len()-2) {
+            if (readings[index]+readings[index+1]+readings[index+2]) > current_reading {
                 num_increases = num_increases + 1;
             }
-            current_reading = *avg_reading;
+            current_reading = readings[index]+readings[index+1]+readings[index+2];
         }
 
         println!("Number of depth increases {}", num_increases);
