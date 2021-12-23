@@ -11,6 +11,7 @@ fn main() {
 
     match aoc_day {
         1 => aoc_day1_solver::solve(data_dir.to_string(), *aoc_day, *aoc_day_part).ok(),
+        2 => aoc_day2_solver::solve(data_dir.to_string(), *aoc_day, *aoc_day_part).ok(),
         _ => aoc_no_solver::solve(data_dir.to_string(), *aoc_day, *aoc_day_part).ok(),
     };
     
