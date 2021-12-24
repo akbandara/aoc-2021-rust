@@ -20,7 +20,7 @@
                     "kind": "lib"
                 }
             },
-            "args": [],
+            "args": ["data/aoc2021-day3-data-test.txt", 3, 1],
             "cwd": "${workspaceFolder}"
         },
         {
@@ -38,7 +38,7 @@
                     "kind": "bin"
                 }
             },
-            "args": ["data/aoc2021-day1-data-test.txt", 1, 1],
+            "args": ["data/aoc2021-day3-data.txt", "3", "1"],
             "cwd": "${workspaceFolder}"
         },
         {
@@ -57,7 +57,7 @@
                     "kind": "bin"
                 }
             },
-            "args": [],
+            "args": ["data/aoc2021-day3-data-test.txt", 3, 1],
             "cwd": "${workspaceFolder}"
         }
     ]
