@@ -44,8 +44,7 @@ pub fn solve(filename: String, day : usize, part : usize) -> io::Result<()>  {
             gamma_val = gamma_val + gamma[index]*place_value;
         }
 
-
-        println!("Calculated Gamma = {:?}, {}; Epsilon = {:?}, {} | Gamma x Epsilon = {}", gamma, gamma_val, epsilon, epsilon_val, epsilon_val*gamma_val);
+        println!("Calculated Gamma = {:?}, {}; Epsilon = {:?}, {} \n Gamma x Epsilon = {}", gamma, gamma_val, epsilon, epsilon_val, epsilon_val*gamma_val);
         
     }
 
