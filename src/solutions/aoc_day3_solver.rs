@@ -18,13 +18,13 @@ pub fn solve(filename: String, day : usize, part : usize) -> io::Result<()>  {
 
         for diagnostic_report in &data {
 
-            let diagnostic_report_entry: Vec<char> = diagnostic_report.chars().collect();
+            let diagnostic_report: Vec<char> = diagnostic_report.chars().collect();
 
-            for index in 0..diagnostic_report_entry.len() {
-                match diagnostic_report_entry[index] {
+            for index in 0..diagnostic_report.len() {
+                match diagnostic_report[index] {
                     '0' => bit_freq[index] = bit_freq[index]-1,
                     '1' => bit_freq[index] = bit_freq[index]+1,
-                    _ => println!("Unexpected report char: {}", diagnostic_report_entry[index]),
+                    _ => println!("Unexpected report char: {}", diagnostic_report[index]),
                 };
             }
 
